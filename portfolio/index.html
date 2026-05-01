@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terra Engineer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,200..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/tailwind.css" />
+  </head>
+  <body
+    data-page="top"
+    class="min-h-screen flex flex-col antialiased selection:bg-primary selection:text-on-primary"
+  >
+    <header
+      class="w-full top-0 sticky z-50 bg-[#faf6f0] dark:bg-stone-950 border-b border-stone-200 dark:border-stone-800 shadow-sm transition-colors duration-300 ease-in-out"
+    >
+      <div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+        <a
+          class="font-['Literata'] text-xl font-bold text-[#4a7c59] dark:text-emerald-500 hover:text-opacity-80 transition-opacity"
+          href="#"
+        >
+          My Portfolio
+        </a>
+        <nav class="hidden md:flex items-center gap-8 font-['Nunito_Sans'] font-medium">
+          <a class="text-[#4a7c59] dark:text-emerald-400 border-b-2 border-[#4a7c59] pb-1 duration-300 ease-in-out" href="#">Home</a>
+          <a class="text-stone-600 dark:text-stone-400 hover:text-[#4a7c59] dark:hover:text-emerald-400 transition-colors duration-300 ease-in-out" href="about.html">About</a>
+          <a class="text-stone-600 dark:text-stone-400 hover:text-[#4a7c59] dark:hover:text-emerald-400 transition-colors duration-300 ease-in-out" href="#">Works</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="grow">
+      <section class="relative pt-24 pb-32 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto relative z-10 flex flex-col lg:flex-row items-center gap-16">
+          <div class="flex-1 space-y-8">
+            <h1 class="font-headline text-5xl lg:text-7xl font-bold leading-tight text-on-background">My Portfolio</h1>
+            <p class="font-body text-xl text-on-surface-variant max-w-2xl leading-relaxed">
+              技術という土壌に根を張り、ユーザーにとって温かみのあるデジタル体験を育むエンジニアです。機能性だけでなく、心地よさを追求した開発を心がけています。
+            </p>
+            <div class="flex flex-wrap gap-4 pt-4">
+              <a
+                class="inline-flex items-center justify-center px-8 py-4 bg-primary text-on-primary rounded-xl font-bold hover:bg-opacity-90 transition-all shadow-[0_4px_20px_rgba(46,50,48,0.15)] hover:shadow-[0_6px_24px_rgba(46,50,48,0.2)]"
+                href="about.html"
+              >
+                私について
+                <span class="material-symbols-outlined ml-2 text-sm" data-icon="arrow_forward">arrow_forward</span>
+              </a>
+              <a
+                class="inline-flex items-center justify-center px-8 py-4 bg-surface text-primary border border-outline-variant rounded-xl font-bold hover:bg-surface-container transition-all"
+                href="#works"
+              >
+                制作実績を見る
+              </a>
+            </div>
+          </div>
+
+          <div class="flex-1 relative w-full aspect-square max-w-lg">
+            <div class="absolute inset-0 bg-primary/5 rounded-4xl transform rotate-3 scale-105"></div>
+            <img
+              alt="Developer workspace"
+              class="relative z-10 w-full h-full object-cover rounded-4xl shadow-[0_4px_20px_rgba(46,50,48,0.06)]"
+              data-alt="A warm, inviting close-up of a modern developer workspace. A sleek laptop sits on a solid, natural wood desk. Soft, natural sunlight streams in from a nearby window, casting gentle shadows and highlighting a small, vibrant green potted plant resting beside the computer. The scene embodies a calm, earthy, and organic aesthetic, with muted cream backgrounds and deep forest green accents, perfectly aligning with the Terra UI design system. The mood is focused yet approachable and serene."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRZFZ523pLkex0QHLRP3YasxMaVkRz6JOn1FSjKfo0Jsk6Y1j5fyMZo8hxDHm6PWPIR-XBjVnvK60-8rLfx_x7LAfYETM_UuobasH9rbNzNUYgUIcVbeJlGGlp3c4jxywGkMljP1T8V2CLHAhXDk0RUTVWhGF5mzC_ndFmwXqs-lKUbmFnHb7qHwK_GOWrOTfBp4pny39zakQbYYnyjzzhhHgjGF65p0-gliV7TVj-yu86CCbqPosW2s8R9cAWOf-AzshJp2Ukmw"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 px-6 bg-surface-container-low">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-16 space-y-4">
+            <h2 class="font-headline text-3xl md:text-4xl font-bold text-on-background">ページ紹介</h2>
+            <p class="font-body text-on-surface-variant max-w-2xl mx-auto text-lg">
+              このポートフォリオサイトでは、これまでの歩みと手がけたアプリケーションを
+              <span class="block">ご覧いただけます。</span>
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <a
+              class="group relative overflow-hidden rounded-3xl bg-surface p-10 flex flex-col h-full shadow-[0_4px_20px_rgba(46,50,48,0.06)] hover:shadow-[0_8px_30px_rgba(46,50,48,0.1)] transition-all duration-300 border border-transparent hover:border-outline-variant/30"
+              href="about.html"
+            >
+              <div class="absolute top-0 right-0 w-64 h-64 bg-secondary-container rounded-full blur-3xl -mr-32 -mt-32 opacity-50 group-hover:opacity-70 transition-opacity"></div>
+              <div class="relative z-10 grow">
+                <div class="w-16 h-16 rounded-xl bg-primary-container text-on-primary-container flex items-center justify-center mb-8">
+                  <span class="material-symbols-outlined text-3xl" data-icon="person">person</span>
+                </div>
+                <h3 class="font-headline text-2xl font-bold text-on-background mb-4">About Me</h3>
+                <p class="font-body text-on-surface-variant leading-relaxed mb-8">
+                  プロフィールやこれまでの経験、技術に興味を持ったきっかけなどを紹介しています。 どのような考え方で学習や制作に取り組んでいるのかも含め、私自身についてまとめています。
+                </p>
+              </div>
+              <div class="relative z-10 flex items-center text-primary font-bold group-hover:translate-x-2 transition-transform">
+                詳細を読む
+                <span class="material-symbols-outlined ml-2" data-icon="arrow_right_alt">arrow_right_alt</span>
+              </div>
+            </a>
+
+            <a
+              class="group relative overflow-hidden rounded-3xl bg-surface p-10 flex flex-col h-full shadow-[0_4px_20px_rgba(46,50,48,0.06)] hover:shadow-[0_8px_30px_rgba(46,50,48,0.1)] transition-all duration-300 border border-transparent hover:border-outline-variant/30"
+              href="#works"
+            >
+              <div class="absolute bottom-0 right-0 w-64 h-64 bg-tertiary-container rounded-full blur-3xl -mr-32 -mb-32 opacity-40 group-hover:opacity-60 transition-opacity"></div>
+              <div class="relative z-10 grow">
+                <div class="w-16 h-16 rounded-xl bg-tertiary-container text-on-tertiary-container flex items-center justify-center mb-8">
+                  <span class="material-symbols-outlined text-3xl" data-icon="work">work</span>
+                </div>
+                <h3 class="font-headline text-2xl font-bold text-on-background mb-4">Works</h3>
+                <p class="font-body text-on-surface-variant leading-relaxed mb-8">
+                  制作したアプリケーションを紹介しています。 制作の目的や使用技術、開発の過程で工夫した点についてまとめています。
+                </p>
+              </div>
+              <div class="relative z-10 flex items-center text-tertiary font-bold group-hover:translate-x-2 transition-transform">
+                製作物を見る
+                <span class="material-symbols-outlined ml-2" data-icon="arrow_right_alt">arrow_right_alt</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="w-full mt-auto bg-[#faf6f0] dark:bg-stone-950 border-t border-stone-200 dark:border-stone-800">
+      <div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 max-w-7xl mx-auto gap-4">
+        <div class="font-['Literata'] font-semibold text-[#4a7c59]">My Portfolio</div>
+        <div class="font-['Nunito_Sans'] text-sm text-[#4a7c59] dark:text-emerald-500 opacity-80 hover:opacity-100 transition-opacity">
+          <br />
+        </div>
+        <div class="flex gap-6 font-['Nunito_Sans'] text-sm">
+          <a class="text-stone-500 dark:text-stone-500 hover:text-[#4a7c59] dark:hover:text-emerald-400 opacity-80 hover:opacity-100 transition-opacity" href="#">GitHub</a>
+          <a class="text-stone-500 dark:text-stone-500 hover:text-[#4a7c59] dark:hover:text-emerald-400 opacity-80 hover:opacity-100 transition-opacity" href="#">
+            <br />
+          </a>
+          <a class="text-stone-500 dark:text-stone-500 hover:text-[#4a7c59] dark:hover:text-emerald-400 opacity-80 hover:opacity-100 transition-opacity" href="#">
+            <br />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

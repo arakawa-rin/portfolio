@@ -1,0 +1,1233 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Works | My Portfolio</title>
+    <meta
+      content="旅行やイベントの支出記録と精算を支援するアプリ PayLog の制作物紹介ページです。"
+      name="description"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,200..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/tailwind.css" />
+  </head>
+  <body
+    class="min-h-screen flex flex-col antialiased selection:bg-primary selection:text-on-primary"
+  >
+    <!-- TopAppBar -->
+    <header
+      class="w-full top-0 sticky z-50 bg-[#faf6f0] border-b border-stone-200 shadow-sm transition-colors duration-300 ease-in-out"
+    >
+      <div
+        class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto"
+      >
+        <a
+          class="font-['Literata'] text-xl font-bold text-[#4a7c59] hover:text-opacity-80 transition-opacity"
+          href="index.html"
+        >
+          My Portfolio
+        </a>
+        <nav
+          class="hidden md:flex items-center gap-8 font-['Nunito_Sans'] font-medium"
+        >
+          <a
+            class="text-stone-600 hover:text-[#4a7c59] transition-colors duration-300 ease-in-out"
+            href="index.html"
+            >Top</a
+          >
+          <a
+            class="text-stone-600 hover:text-[#4a7c59] transition-colors duration-300 ease-in-out"
+            href="about.html"
+            >About</a
+          >
+          <a
+            class="text-[#4a7c59] border-b-2 border-[#4a7c59] pb-1 duration-300 ease-in-out"
+            href="works.html"
+            >Works</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main class="grow">
+      <!-- Page Hero -->
+      <section class="relative pt-24 pb-16 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto text-center space-y-4">
+          <p
+            class="font-body text-primary font-bold uppercase tracking-wider text-sm"
+          >
+            Works
+          </p>
+          <h1
+            class="font-headline text-4xl md:text-5xl font-bold text-on-background"
+          >
+            制作物紹介
+          </h1>
+          <p
+            class="font-body text-lg text-on-surface-variant max-w-2xl mx-auto"
+          >
+            旅行やイベントで発生する支出を記録し、参加者ごとの負担額と精算額を整理するアプリ
+            PayLog について、設計意図と実装上の工夫をまとめています。
+          </p>
+        </div>
+      </section>
+
+      <!-- Overview -->
+      <section class="py-12 px-6">
+        <div class="max-w-5xl mx-auto">
+          <section
+            class="bg-surface p-8 md:p-10 rounded-3xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30 space-y-10"
+          >
+            <h2
+              class="font-headline text-2xl font-bold text-on-background flex items-center gap-2"
+            >
+              <span class="material-symbols-outlined text-primary">info</span>
+              アプリの概要
+            </h2>
+
+            <div class="flex flex-col md:flex-row md:items-center gap-6">
+              <div class="flex-1 space-y-1">
+                <p
+                  class="font-body text-sm text-on-surface-variant font-medium"
+                >
+                  アプリ名
+                </p>
+                <p class="font-headline text-3xl font-bold text-on-background">
+                  PayLog（ペイログ）
+                </p>
+              </div>
+              <div class="shrink-0">
+                <img
+                  class="w-28 h-28 rounded-3xl object-cover shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
+                  src="images/paylog-icon.jpg"
+                  alt="PayLogのアプリアイコン"
+                />
+              </div>
+            </div>
+
+            <div
+              class="bg-surface-container-low rounded-2xl p-6 border border-outline-variant/30 space-y-1"
+            >
+              <p
+                class="font-body text-sm text-on-surface-variant font-medium"
+              >
+                概要
+              </p>
+              <p
+                class="font-body text-on-surface leading-relaxed"
+              >
+                イベントや旅行などの支出を記録し、参加者間の精算を簡単に行えるアプリです。
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+              <article
+                class="bg-surface-container-low rounded-2xl p-6 border border-outline-variant/30 space-y-5"
+              >
+                <div class="space-y-3">
+                  <span
+                    class="inline-block px-3 py-1 bg-tertiary-container text-on-tertiary-container rounded-lg font-bold text-xs uppercase tracking-wider"
+                    >課題</span
+                  >
+                  <h3 class="font-headline text-lg font-bold text-on-background">
+                    会計係に負担が集中する
+                  </h3>
+                  <p
+                    class="font-body text-sm text-on-surface-variant leading-relaxed"
+                  >
+                    旅行やサークルイベントでは、参加人数が増えるほど支出管理や精算計算が複雑になります。ゼミ合宿では、会計係がPCを持参してExcelで管理し、後から金額修正が発生することもありました。
+                  </p>
+                </div>
+
+                <div class="text-primary text-2xl text-center" aria-hidden="true">
+                  ↓
+                </div>
+
+                <div class="space-y-3">
+                  <span
+                    class="inline-block px-3 py-1 bg-primary-container text-on-primary-container rounded-lg font-bold text-xs uppercase tracking-wider"
+                    >PayLogでの解決</span
+                  >
+                  <h3 class="font-headline text-lg font-bold text-on-background">
+                    支出登録と自動精算で手計算を減らす
+                  </h3>
+                  <p
+                    class="font-body text-sm text-on-surface-variant leading-relaxed"
+                  >
+                    支出・参加者・支払者をアプリ上で登録し、精算結果を自動で計算できるようにしました。会計係の手作業や計算ミスによる修正の負担を減らします。
+                  </p>
+                </div>
+
+                <div class="flex flex-wrap gap-2 pt-2">
+                  <span
+                    class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-lg font-medium text-xs"
+                    >イベント作成</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-lg font-medium text-xs"
+                    >参加者管理</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-lg font-medium text-xs"
+                    >支出登録</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-lg font-medium text-xs"
+                    >自動精算</span
+                  >
+                </div>
+              </article>
+
+              <article
+                class="bg-surface-container-low rounded-2xl p-6 border border-outline-variant/30 space-y-5"
+              >
+                <div class="space-y-3">
+                  <span
+                    class="inline-block px-3 py-1 bg-tertiary-container text-on-tertiary-container rounded-lg font-bold text-xs uppercase tracking-wider"
+                    >課題</span
+                  >
+                  <h3 class="font-headline text-lg font-bold text-on-background">
+                    傾斜割り勘がしづらい
+                  </h3>
+                  <p
+                    class="font-body text-sm text-on-surface-variant leading-relaxed"
+                  >
+                    飲み会やイベントでは、お酒を飲まない人、運転を担当する人、幹事など、負担に差がある場面があります。しかし、細かく計算するのが面倒で、一律の割り勘になりやすい課題があります。
+                  </p>
+                </div>
+
+                <div class="text-primary text-2xl text-center" aria-hidden="true">
+                  ↓
+                </div>
+
+                <div class="space-y-3">
+                  <span
+                    class="inline-block px-3 py-1 bg-primary-container text-on-primary-container rounded-lg font-bold text-xs uppercase tracking-wider"
+                    >PayLogでの解決</span
+                  >
+                  <h3 class="font-headline text-lg font-bold text-on-background">
+                    口数割で負担差を反映する
+                  </h3>
+                  <p
+                    class="font-body text-sm text-on-surface-variant leading-relaxed"
+                  >
+                    一律割り勘だけでなく、参加者ごとに負担割合を変えられる口数割に対応しました。負担差を考慮した精算を、手計算なしで行えるようにします。
+                  </p>
+                </div>
+
+                <div class="flex flex-wrap gap-2 pt-2">
+                  <span
+                    class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-lg font-medium text-xs"
+                    >均等割り</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-lg font-medium text-xs"
+                    >口数割</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-lg font-medium text-xs"
+                    >負担割合設定</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-lg font-medium text-xs"
+                    >自動割当計算</span
+                  >
+                </div>
+              </article>
+
+              <article
+                class="bg-surface-container-low rounded-2xl p-6 border border-outline-variant/30 space-y-5"
+              >
+                <div class="space-y-3">
+                  <span
+                    class="inline-block px-3 py-1 bg-tertiary-container text-on-tertiary-container rounded-lg font-bold text-xs uppercase tracking-wider"
+                    >課題</span
+                  >
+                  <h3 class="font-headline text-lg font-bold text-on-background">
+                    立替を請求しづらい
+                  </h3>
+                  <p
+                    class="font-body text-sm text-on-surface-variant leading-relaxed"
+                  >
+                    旅行やイベントでは、誰かが一時的に多く立て替える場面があります。精算が複雑になるほど言い出しづらくなり、遠慮しがちな人や気前の良い人がそのまま負担してしまうことがあります。
+                  </p>
+                </div>
+
+                <div class="text-primary text-2xl text-center" aria-hidden="true">
+                  ↓
+                </div>
+
+                <div class="space-y-3">
+                  <span
+                    class="inline-block px-3 py-1 bg-primary-container text-on-primary-container rounded-lg font-bold text-xs uppercase tracking-wider"
+                    >PayLogでの解決</span
+                  >
+                  <h3 class="font-headline text-lg font-bold text-on-background">
+                    誰が誰にいくら払うかを自動表示する
+                  </h3>
+                  <p
+                    class="font-body text-sm text-on-surface-variant leading-relaxed"
+                  >
+                    参加者ごとの支払額・負担額をもとに、誰が誰にいくら支払うべきかを自動で整理します。口頭での請求に頼らず、アプリ上で精算結果を確認できます。
+                  </p>
+                </div>
+
+                <div class="flex flex-wrap gap-2 pt-2">
+                  <span
+                    class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-lg font-medium text-xs"
+                    >立替管理</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-lg font-medium text-xs"
+                    >負担額計算</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-lg font-medium text-xs"
+                    >精算結果表示</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-lg font-medium text-xs"
+                    >送金ペア算出</span
+                  >
+                </div>
+              </article>
+            </div>
+
+            <div class="space-y-3">
+              <div class="flex flex-wrap gap-4">
+                <a
+                  class="inline-flex items-center justify-center px-8 py-4 bg-primary text-on-primary rounded-xl font-bold hover:bg-opacity-90 transition-all shadow-[0_4px_20px_rgba(46,50,48,0.15)] hover:shadow-[0_6px_24px_rgba(46,50,48,0.2)]"
+                  href="https://github.com/arakawa-rin/app_project"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHubリポジトリを見る
+                  <span
+                    class="material-symbols-outlined ml-2 text-sm"
+                    >open_in_new</span
+                  >
+                </a>
+                <a
+                  class="inline-flex items-center justify-center px-8 py-4 bg-surface text-primary border border-outline-variant rounded-xl font-bold hover:bg-surface-container transition-all"
+                  href="https://tripsplit-prn0.onrender.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Web体験版リンク
+                  <span
+                    class="material-symbols-outlined ml-2 text-sm"
+                    >open_in_new</span
+                  >
+                </a>
+              </div>
+              <p class="font-body text-sm text-on-surface-variant">
+                ※本来は iOS アプリとして制作しましたが、このサイトを閲覧した方が気軽に体験できるよう Web にも対応しています。
+              </p>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- Screenshots & Demo -->
+      <section class="py-16 px-6 bg-surface-container-low">
+        <div class="max-w-5xl mx-auto space-y-8">
+          <section
+            class="bg-surface p-8 md:p-10 rounded-3xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
+          >
+            <h2
+              class="font-headline text-2xl font-bold text-on-background mb-8 flex items-center gap-2"
+            >
+              <span class="material-symbols-outlined text-primary"
+                >photo_library</span
+              >
+              スクリーンショット
+            </h2>
+            <div class="space-y-10">
+              <div>
+                <h3
+                  class="font-headline text-lg font-bold text-on-background mb-4"
+                >
+                  主要画面
+                </h3>
+                <div
+                  class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6"
+                >
+                  <figure class="space-y-3">
+                    <img
+                      class="w-full rounded-2xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
+                      src="images/paylog-screen-event-list.jpg"
+                      alt="PayLogのイベント一覧画面"
+                    />
+                    <figcaption class="space-y-1">
+                      <p
+                        class="font-body font-bold text-sm text-on-background"
+                      >
+                        イベント一覧
+                      </p>
+                      <p class="font-body text-xs text-on-surface-variant">
+                        作成済みイベントを一覧で確認できる画面です。
+                      </p>
+                    </figcaption>
+                  </figure>
+                  <figure class="space-y-3">
+                    <img
+                      class="w-full rounded-2xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
+                      src="images/paylog-screen-event-create.jpg"
+                      alt="PayLogのイベント作成画面"
+                    />
+                    <figcaption class="space-y-1">
+                      <p
+                        class="font-body font-bold text-sm text-on-background"
+                      >
+                        イベント作成
+                      </p>
+                      <p class="font-body text-xs text-on-surface-variant">
+                        イベント名、参加者、日付を入力して開始できます。
+                      </p>
+                    </figcaption>
+                  </figure>
+                  <figure class="space-y-3">
+                    <img
+                      class="w-full rounded-2xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
+                      src="images/paylog-screen-event-detail.jpg"
+                      alt="PayLogのイベント詳細画面"
+                    />
+                    <figcaption class="space-y-1">
+                      <p
+                        class="font-body font-bold text-sm text-on-background"
+                      >
+                        イベント詳細
+                      </p>
+                      <p class="font-body text-xs text-on-surface-variant">
+                        参加者と最近の支出をまとめて確認できます。
+                      </p>
+                    </figcaption>
+                  </figure>
+                  <figure class="space-y-3">
+                    <img
+                      class="w-full rounded-2xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
+                      src="images/paylog-screen-add-expense.jpg"
+                      alt="PayLogの支出追加画面"
+                    />
+                    <figcaption class="space-y-1">
+                      <p
+                        class="font-body font-bold text-sm text-on-background"
+                      >
+                        支出追加
+                      </p>
+                      <p class="font-body text-xs text-on-surface-variant">
+                        金額、費目、日付を入力して支出を記録する画面です。
+                      </p>
+                    </figcaption>
+                  </figure>
+                  <figure class="space-y-3">
+                    <img
+                      class="w-full rounded-2xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
+                      src="images/paylog-screen-settlement.jpg"
+                      alt="PayLogの精算結果画面"
+                    />
+                    <figcaption class="space-y-1">
+                      <p
+                        class="font-body font-bold text-sm text-on-background"
+                      >
+                        精算結果
+                      </p>
+                      <p class="font-body text-xs text-on-surface-variant">
+                        参加者ごとの立替額と支払額を整理して確認できます。
+                      </p>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+
+              <div>
+                <h3
+                  class="font-headline text-lg font-bold text-on-background mb-2"
+                >
+                  支出追加の各ステップ
+                </h3>
+                <p
+                  class="font-body text-sm text-on-surface-variant mb-4"
+                >
+                  情報量が多いため、入力ステップごとに画面を分けて掲載しています。
+                </p>
+                <div
+                  class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6"
+                >
+                  <figure class="space-y-3">
+                    <img
+                      class="w-full rounded-2xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
+                      src="images/paylog-screen-add-expense-1.jpg"
+                      alt="PayLogの支出追加画面 - 金額・費目・支出日の入力"
+                    />
+                    <figcaption class="space-y-1">
+                      <p
+                        class="font-body font-bold text-sm text-on-background"
+                      >
+                        ① 金額・費目・支出日
+                      </p>
+                      <p class="font-body text-xs text-on-surface-variant">
+                        金額と費目を入力し、カレンダーから支出日を選択します。
+                      </p>
+                    </figcaption>
+                  </figure>
+                  <figure class="space-y-3">
+                    <img
+                      class="w-full rounded-2xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
+                      src="images/paylog-screen-add-expense-2.jpg"
+                      alt="PayLogの支出追加画面 - 負担者の選択"
+                    />
+                    <figcaption class="space-y-1">
+                      <p
+                        class="font-body font-bold text-sm text-on-background"
+                      >
+                        ② 負担者の選択
+                      </p>
+                      <p class="font-body text-xs text-on-surface-variant">
+                        参加者の中から、その支出を負担する人を選びます。
+                      </p>
+                    </figcaption>
+                  </figure>
+                  <figure class="space-y-3">
+                    <img
+                      class="w-full rounded-2xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
+                      src="images/paylog-screen-add-expense-3.jpg"
+                      alt="PayLogの支出追加画面 - 口数と合計のリアルタイム計算"
+                    />
+                    <figcaption class="space-y-1">
+                      <p
+                        class="font-body font-bold text-sm text-on-background"
+                      >
+                        ③ 合計と過不足の表示
+                      </p>
+                      <p class="font-body text-xs text-on-surface-variant">
+                        入力中の合計と支出金額との差分をその場で確認できます。
+                      </p>
+                    </figcaption>
+                  </figure>
+                  <figure class="space-y-3">
+                    <img
+                      class="w-full rounded-2xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
+                      src="images/paylog-screen-add-expense-4.jpg"
+                      alt="PayLogの支出追加画面 - 口数割モードの設定"
+                    />
+                    <figcaption class="space-y-1">
+                      <p
+                        class="font-body font-bold text-sm text-on-background"
+                      >
+                        ④ 口数割モード
+                      </p>
+                      <p class="font-body text-xs text-on-surface-variant">
+                        1口単価と各人の口数から、傾斜割り勘を自動計算します。
+                      </p>
+                    </figcaption>
+                  </figure>
+                  <figure class="space-y-3">
+                    <img
+                      class="w-full rounded-2xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
+                      src="images/paylog-screen-add-expense-5.jpg"
+                      alt="PayLogの支出追加画面 - 割り勘モードと立替人選択"
+                    />
+                    <figcaption class="space-y-1">
+                      <p
+                        class="font-body font-bold text-sm text-on-background"
+                      >
+                        ⑤ 割り勘モード
+                      </p>
+                      <p class="font-body text-xs text-on-surface-variant">
+                        一律割り勘に切り替え、立替人を選んで登録します。
+                      </p>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section
+            class="bg-surface p-8 md:p-10 rounded-3xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
+          >
+            <h2
+              class="font-headline text-2xl font-bold text-on-background mb-6 flex items-center gap-2"
+            >
+              <span class="material-symbols-outlined text-primary"
+                >play_circle</span
+              >
+              デモ動画
+            </h2>
+            <div
+              class="aspect-video bg-surface-variant/40 rounded-2xl border border-outline-variant/30 flex items-center justify-center text-on-surface-variant"
+            >
+              <div class="flex flex-col items-center gap-2">
+                <span class="material-symbols-outlined text-4xl"
+                  >play_circle</span
+                >
+                <span class="font-body text-sm">動画埋め込み用の枠</span>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- Tech Stack & Diagrams -->
+      <section class="py-12 px-6">
+        <div class="max-w-5xl mx-auto space-y-8">
+          <section
+            class="bg-surface p-8 md:p-10 rounded-3xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
+          >
+            <h2
+              class="font-headline text-2xl font-bold text-on-background mb-8 flex items-center gap-2"
+            >
+              <span class="material-symbols-outlined text-primary">layers</span>
+              使用技術
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <article
+                class="bg-surface-container-low rounded-2xl p-6 border border-outline-variant/30 space-y-3"
+              >
+                <h3
+                  class="font-headline text-lg font-bold text-primary"
+                >
+                  Frontend
+                </h3>
+                <p
+                  class="font-body text-sm text-on-surface-variant leading-relaxed"
+                >
+                  React Native / Expo / TypeScript を中心に、iOS 前提の画面を構築しています。
+                  Expo Web と react-native-web により、同じUIをWeb体験版としても公開できる構成です。
+                </p>
+              </article>
+              <article
+                class="bg-surface-container-low rounded-2xl p-6 border border-outline-variant/30 space-y-3"
+              >
+                <h3
+                  class="font-headline text-lg font-bold text-primary"
+                >
+                  Backend
+                </h3>
+                <p
+                  class="font-body text-sm text-on-surface-variant leading-relaxed"
+                >
+                  Flask / Flask-SQLAlchemy で REST API を実装しています。
+                  イベント、参加者、支出、精算をAPI単位で分け、入力チェックや権限確認をサーバー側でも行っています。
+                </p>
+              </article>
+              <article
+                class="bg-surface-container-low rounded-2xl p-6 border border-outline-variant/30 space-y-3"
+              >
+                <h3
+                  class="font-headline text-lg font-bold text-primary"
+                >
+                  Database
+                </h3>
+                <p
+                  class="font-body text-sm text-on-surface-variant leading-relaxed"
+                >
+                  Supabase の PostgreSQL を利用する想定です。
+                  SQLAlchemy のモデルでは、参加者・支出・負担配分を分けて管理し、精算計算に必要なデータを正規化しています。
+                </p>
+              </article>
+              <article
+                class="bg-surface-container-low rounded-2xl p-6 border border-outline-variant/30 space-y-3"
+              >
+                <h3
+                  class="font-headline text-lg font-bold text-primary"
+                >
+                  Infrastructure / Deployment
+                </h3>
+                <p
+                  class="font-body text-sm text-on-surface-variant leading-relaxed"
+                >
+                  Render 上で gunicorn により Flask アプリを起動し、Expo Web の
+                  <code
+                    class="px-1.5 py-0.5 bg-surface-container-high rounded text-xs font-mono"
+                    >dist</code
+                  >
+                  を Flask から配信します。
+                  本番では同一オリジン、ローカルでは CORS を許可する構成にしています。
+                </p>
+              </article>
+              <article
+                class="bg-surface-container-low rounded-2xl p-6 border border-outline-variant/30 space-y-3 md:col-span-2"
+              >
+                <h3
+                  class="font-headline text-lg font-bold text-primary"
+                >
+                  Testing / Others
+                </h3>
+                <p
+                  class="font-body text-sm text-on-surface-variant leading-relaxed"
+                >
+                  pytest による API 結合テストと、精算補助関数のユニットテストを用意しています。
+                  金額計算には Python の Decimal を使い、浮動小数点による誤差を避けています。
+                </p>
+              </article>
+            </div>
+          </section>
+
+          <section
+            class="bg-surface p-8 md:p-10 rounded-3xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
+          >
+            <h2
+              class="font-headline text-2xl font-bold text-on-background mb-4 flex items-center gap-2"
+            >
+              <span class="material-symbols-outlined text-primary"
+                >architecture</span
+              >
+              アーキテクチャ図
+            </h2>
+            <p
+              class="font-body text-on-surface-variant leading-relaxed mb-6"
+            >
+              iOSアプリとしての利用を軸にしつつ、Web体験版を同じバックエンドに接続する構成です。
+              本番では Render が静的ファイルとAPIをまとめて配信します。
+            </p>
+            <div class="rounded-2xl overflow-hidden border border-outline-variant/30">
+              <img
+                class="w-full"
+                src="images/paylog-architecture-diagram.jpg"
+                alt="PayLogのアーキテクチャ図 - ユーザー(iOS/Web)からReact Native製のフロントエンド、Flask REST APIゲートウェイ、SQLAlchemy ORM、Supabase PostgreSQLまでのデータフロー"
+              />
+            </div>
+          </section>
+
+          <section
+            class="bg-surface p-8 md:p-10 rounded-3xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
+          >
+            <h2
+              class="font-headline text-2xl font-bold text-on-background mb-4 flex items-center gap-2"
+            >
+              <span class="material-symbols-outlined text-primary">schema</span>
+              ER図・DB設計の意図
+            </h2>
+            <p
+              class="font-body text-on-surface-variant leading-relaxed mb-6"
+            >
+              DBは、イベントそのもの、イベント内の参加者、支出、支出ごとの負担配分を分けて管理しています。
+              支出テーブルに全員分の負担を直接持たせず、Allocations に分離することで、均等割と口数割の両方を同じ精算ロジックで扱えるようにしています。
+            </p>
+            <div class="rounded-2xl overflow-hidden border border-outline-variant/30 mb-6">
+              <img
+                class="w-full"
+                src="images/paylog-er-diagram.png"
+                alt="PayLogのER図"
+              />
+            </div>
+            <div
+              class="bg-surface-container-low rounded-2xl p-6 border border-outline-variant/30 flex flex-wrap gap-3"
+              aria-label="PayLogのER図概要"
+            >
+              <span
+                class="px-4 py-2 bg-secondary-container text-on-secondary-container rounded-lg font-mono text-sm"
+                >users</span
+              >
+              <span
+                class="px-4 py-2 bg-secondary-container text-on-secondary-container rounded-lg font-mono text-sm"
+                >events</span
+              >
+              <span
+                class="px-4 py-2 bg-secondary-container text-on-secondary-container rounded-lg font-mono text-sm"
+                >event_participants</span
+              >
+              <span
+                class="px-4 py-2 bg-secondary-container text-on-secondary-container rounded-lg font-mono text-sm"
+                >expense_categories</span
+              >
+              <span
+                class="px-4 py-2 bg-secondary-container text-on-secondary-container rounded-lg font-mono text-sm"
+                >expenses</span
+              >
+              <span
+                class="px-4 py-2 bg-secondary-container text-on-secondary-container rounded-lg font-mono text-sm"
+                >allocations</span
+              >
+              <span
+                class="px-4 py-2 bg-secondary-container text-on-secondary-container rounded-lg font-mono text-sm"
+                >settlements</span
+              >
+            </div>
+            <p class="font-body text-sm text-on-surface-variant mt-4">
+              現状はゲスト利用を前提にしながら、users と event_participants を分けているため、
+              将来的にログイン機能を追加しても、イベント内での表示名や参加状態を独立して扱いやすい構成です。
+              deleted_at や status、joined_at / left_at もあり、削除・退室・再参加の状態管理を拡張しやすくしています。
+            </p>
+          </section>
+        </div>
+      </section>
+
+      <!-- Frontend & Backend Insights -->
+      <section class="py-16 px-6 bg-surface-container-low">
+        <div class="max-w-5xl mx-auto space-y-8">
+          <section
+            class="bg-surface p-8 md:p-10 rounded-3xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
+          >
+            <div class="mb-8 space-y-2">
+              <p
+                class="font-body text-primary font-bold uppercase tracking-wider text-sm"
+              >
+                Frontend
+              </p>
+              <h2
+                class="font-headline text-2xl font-bold text-on-background flex items-center gap-2"
+              >
+                <span class="material-symbols-outlined text-primary"
+                  >design_services</span
+                >
+                フロントエンドで工夫した点
+              </h2>
+            </div>
+
+            <article
+              class="bg-surface-container-low rounded-2xl p-6 md:p-8 border border-outline-variant/30 mb-6 grid grid-cols-1 lg:grid-cols-2 gap-6 items-center"
+            >
+              <div class="space-y-3">
+                <h3
+                  class="font-headline text-lg font-bold text-on-background"
+                >
+                  最下部ナビで、迷わず移動できる導線にした
+                </h3>
+                <p
+                  class="font-body text-sm text-on-surface leading-relaxed"
+                >
+                  イベント一覧、作成、設定という主要な操作を最下部に固定し、中央の作成導線を強調することで、初見でも移動先を直感的に判断しやすい構成にしています。
+                </p>
+                <p
+                  class="font-body text-sm text-on-surface-variant leading-relaxed"
+                >
+                  多くの人が日常的に使っているSNSアプリでも最下部ナビが採用されているため、
+                  PayLog でも同じUIを取り入れ、画面を開いた瞬間に「どこへ移動できるか」が伝わることを優先しました。
+                </p>
+              </div>
+              <div class="rounded-2xl overflow-hidden border border-outline-variant/30">
+                <img
+                  class="w-full"
+                  src="images/paylog-screen-event-detail-navi.jpg"
+                  alt="PayLogの最下部ナビを示したイベント詳細画面"
+                />
+              </div>
+            </article>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <article
+                class="bg-surface-container-low rounded-2xl p-6 border border-outline-variant/30 space-y-4"
+              >
+                <h3
+                  class="font-headline text-lg font-bold text-on-background"
+                >
+                  口数割の入力途中でも、金額の一致・不足・超過が見えるようにした
+                </h3>
+                <p
+                  class="font-body text-sm text-on-surface leading-relaxed"
+                >
+                  支出追加画面では、割り勘方式の切り替えに応じて入力項目を出し分け、口数割ではその場で合計と差分を表示しています。
+                </p>
+                <p
+                  class="font-body text-sm text-on-surface-variant leading-relaxed"
+                >
+                  金額と1口単価、口数の関係を見える化しているため、複雑な割り方でも入力の迷いを減らせます。
+                </p>
+                <div class="rounded-2xl overflow-hidden border border-outline-variant/30">
+                  <img
+                    class="w-full"
+                    src="images/paylog-screen-unit-summary.jpg"
+                    alt="PayLogの支出追加画面 - 入力途中の合計と口数、過不足メッセージを表示する入力待ちカード"
+                  />
+                </div>
+                <pre
+                  class="bg-surface-container-high rounded-xl p-4 overflow-x-auto text-xs font-mono text-on-surface leading-relaxed"
+                ><code>const unitSummaryTone =
+  !hasExpenseAmount || !hasUnitPrice
+    ? "neutral"
+    : remainingAmount === 0
+      ? "success"
+      : remainingAmount &gt; 0
+        ? "info"
+        : "warning";
+
+const unitSummaryMessage =
+  !hasExpenseAmount || !hasUnitPrice
+    ? "支出金額と1口単価を入力すると自動計算されます"
+    : remainingAmount === 0
+      ? "口数と金額が一致しています"
+      : remainingAmount &gt; 0
+        ? `あと${remainingUnits}口で一致します`
+        : `${Math.abs(remainingUnits ?? 0)}口分オーバーしています`;
+
+&lt;Text style={styles.unitSummaryValue}&gt;
+  {hasUnitPrice ? formatYen(computedAmount) : "¥0"}
+&lt;/Text&gt;
+&lt;Text style={styles.unitSummaryMessage}&gt;{unitSummaryMessage}&lt;/Text&gt;</code></pre>
+              </article>
+
+              <article
+                class="bg-surface-container-low rounded-2xl p-6 border border-outline-variant/30 space-y-4"
+              >
+                <h3
+                  class="font-headline text-lg font-bold text-on-background"
+                >
+                  一覧を折りたたみ・検索・並び替えで整理し、モバイルでも情報量を制御した
+                </h3>
+                <p
+                  class="font-body text-sm text-on-surface leading-relaxed"
+                >
+                  イベント詳細では参加者と支出を一定件数で折りたたみ、支出一覧には検索とソートを入れて視線移動を減らしています。
+                </p>
+                <p
+                  class="font-body text-sm text-on-surface-variant leading-relaxed"
+                >
+                  Web体験版でも破綻しにくいよう、一覧の密度を抑えつつ操作軸を明確にしています。
+                </p>
+                <div class="rounded-2xl overflow-hidden border border-outline-variant/30">
+                  <img
+                    class="w-full"
+                    src="images/paylog-screen-expense-search.jpg"
+                    alt="PayLogのイベント詳細 - 最近の支出を検索バーとソートで整理した一覧"
+                  />
+                </div>
+                <pre
+                  class="bg-surface-container-high rounded-xl p-4 overflow-x-auto text-xs font-mono text-on-surface leading-relaxed"
+                ><code>const [searchQuery, setSearchQuery] = useState("");
+const [sortOrder, setSortOrder] = useState&lt;
+  "date_desc" | "date_asc" | "amount_desc" | "amount_asc"
+&gt;("date_desc");
+const [participantsExpanded, setParticipantsExpanded] = useState(false);
+const [expensesExpanded, setExpensesExpanded] = useState(false);
+
+const filtered = [...details.expenses]
+  .filter(
+    (e) =&gt;
+      (e.category_name ?? "カテゴリなし").includes(searchQuery) ||
+      e.payer_name.includes(searchQuery),
+  )
+  .sort((a, b) =&gt; {
+    if (sortOrder === "date_desc") {
+      return new Date(b.expense_at).getTime() - new Date(a.expense_at).getTime();
+    }
+    if (sortOrder === "amount_desc") {
+      return parseFloat(b.expense_amount) - parseFloat(a.expense_amount);
+    }
+    return parseFloat(a.expense_amount) - parseFloat(b.expense_amount);
+  });</code></pre>
+              </article>
+            </div>
+          </section>
+
+          <section
+            class="bg-surface p-8 md:p-10 rounded-3xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
+          >
+            <div class="mb-8 space-y-2">
+              <p
+                class="font-body text-primary font-bold uppercase tracking-wider text-sm"
+              >
+                Backend
+              </p>
+              <h2
+                class="font-headline text-2xl font-bold text-on-background flex items-center gap-2"
+              >
+                <span class="material-symbols-outlined text-primary">build</span>
+                バックエンドで工夫した点
+              </h2>
+              <p
+                class="font-body text-on-surface-variant leading-relaxed"
+              >
+                精算結果を正しく返すだけでなく、送金関係の整理、金額処理の信頼性、
+                仕様変更への追従しやすさまで含めて設計しています。
+              </p>
+            </div>
+
+            <article
+              class="bg-surface-container-low rounded-2xl p-6 md:p-8 border border-outline-variant/30 mb-6 grid grid-cols-1 lg:grid-cols-2 gap-6 items-start"
+            >
+              <div class="space-y-3">
+                <h3
+                  class="font-headline text-lg font-bold text-on-background"
+                >
+                  送金関係を整理する精算ロジック
+                </h3>
+                <p
+                  class="font-body text-sm text-on-surface leading-relaxed"
+                >
+                  参加者ごとの収支差額から債権者と債務者を分け、差額が解消される組み合わせを順に作ることで、
+                  複数人の立替が混在しても送金関係を追いやすい精算一覧に変換しています。
+                </p>
+                <p
+                  class="font-body text-sm text-on-surface-variant leading-relaxed"
+                >
+                  送金回数をむやみに増やさず、最終的に「誰が誰へ支払うか」が一目で分かる形へ整えることを重視した実装です。
+                </p>
+              </div>
+              <div class="space-y-3">
+                <pre
+                  class="bg-surface-container-high rounded-xl p-4 overflow-x-auto text-xs font-mono text-on-surface leading-relaxed"
+                ><code>creditors.sort(key=lambda x: x["net"], reverse=True)
+debtors.sort(key=lambda x: x["net"])
+
+while creditors and debtors:
+    creditor = creditors[0]
+    debtor = debtors[0]
+
+    settlement_amount = min(creditor["net"], -debtor["net"])
+    settlements.append({
+        "payee_display_name": creditor["display_name"],
+        "payer_display_name": debtor["display_name"],
+        "amount": settlement_amount
+    })
+
+    creditor["net"] -= settlement_amount
+    debtor["net"] += settlement_amount
+
+    if creditor["net"] == Decimal('0'):
+        creditors.pop(0)
+    if debtor["net"] == Decimal('0'):
+        debtors.pop(0)</code></pre>
+                <p class="font-body text-xs text-on-surface-variant">
+                  差額の大きい組み合わせから順に解消していくことで、複雑な立替関係をそのまま精算フローへ落とし込んでいます。
+                </p>
+              </div>
+            </article>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <article
+                class="bg-surface-container-low rounded-2xl p-6 border border-outline-variant/30 space-y-4"
+              >
+                <h3
+                  class="font-headline text-lg font-bold text-on-background"
+                >
+                  1円単位の信頼性を支える金額処理
+                </h3>
+                <p
+                  class="font-body text-sm text-on-surface leading-relaxed"
+                >
+                  支出額、負担額、精算額の計算を Decimal ベースで揃え、1円単位のズレが精算結果に波及しにくいようにしています。
+                </p>
+                <p
+                  class="font-body text-sm text-on-surface-variant leading-relaxed"
+                >
+                  現在は円表示が中心ですが、将来的に通貨や丸め要件が増えた場合も、数値型の前提を崩さずに拡張しやすい構成です。
+                </p>
+                <pre
+                  class="bg-surface-container-high rounded-xl p-4 overflow-x-auto text-xs font-mono text-on-surface leading-relaxed"
+                ><code>decimals = [Decimal(value) for value in values]
+floored = [
+    int(value.quantize(Decimal('1'), rounding=ROUND_DOWN))
+    for value in decimals
+]
+target_total = int(
+    sum(decimals, Decimal('0')).quantize(Decimal('1'), rounding=ROUND_HALF_UP)
+)
+diff = target_total - sum(floored)</code></pre>
+                <p class="font-body text-xs text-on-surface-variant">
+                  <code
+                    class="px-1.5 py-0.5 bg-surface-container-high rounded text-xs font-mono"
+                    >allocate_integer_values</code
+                  >
+                  で実際に使っている抜粋です。Decimal を前提に丸め方まで固定しているため、表示時の整数化でも扱いがぶれません。
+                </p>
+              </article>
+
+              <article
+                class="bg-surface-container-low rounded-2xl p-6 border border-outline-variant/30 space-y-4"
+              >
+                <h3
+                  class="font-headline text-lg font-bold text-on-background"
+                >
+                  変更に強い責務分離設計
+                </h3>
+                <p
+                  class="font-body text-sm text-on-surface leading-relaxed"
+                >
+                  支出登録時の入力検証は validate_expense_input、均等割と口数割の配分は create_allocations、
+                  精算結果の計算は api_settlements と build_integer_settlement_result に分けています。
+                </p>
+                <p
+                  class="font-body text-sm text-on-surface-variant leading-relaxed"
+                >
+                  たとえば割り方の仕様が増えても、配分ロジックを中心に見直せばよく、入力チェックや精算表示まで巻き込みにくい構成です。
+                </p>
+                <pre
+                  class="bg-surface-container-high rounded-xl p-4 overflow-x-auto text-xs font-mono text-on-surface leading-relaxed"
+                ><code>validated, err = validate_expense_input(data, event, event_id)
+if err:
+    return jsonify({"success": False, "error": err}), 400
+
+alloc_error = create_allocations(
+    expenses.expense_id, event_id, expense_amount,
+    split_method, participants_ids, data
+)
+
+integer_summary, integer_settlements =
+    build_integer_settlement_result(settlement_summary)</code></pre>
+                <p class="font-body text-xs text-on-surface-variant">
+                  1つのAPI内でも処理を役割ごとに呼び分けており、仕様変更時に確認すべき箇所が絞りやすくなっています。
+                </p>
+              </article>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- Future & Related Links -->
+      <section class="py-12 px-6">
+        <div class="max-w-5xl mx-auto space-y-8">
+          <section
+            class="bg-surface p-8 md:p-10 rounded-3xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
+          >
+            <h2
+              class="font-headline text-2xl font-bold text-on-background mb-4 flex items-center gap-2"
+            >
+              <span class="material-symbols-outlined text-primary"
+                >trending_up</span
+              >
+              今後の拡張性
+            </h2>
+            <p
+              class="font-body text-on-surface-variant leading-relaxed mb-8"
+            >
+              現在の構成は、機能を増やすこと自体よりも、どの責務に手を入れればよいかを追いやすい形を意識しています。
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <article
+                class="bg-surface-container-low rounded-2xl p-6 border border-outline-variant/30 space-y-3"
+              >
+                <h3 class="font-headline text-lg font-bold text-on-background">
+                  ログイン機能の追加
+                </h3>
+                <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                  <span class="font-bold text-primary">関連する構成:</span>
+                  <code
+                    class="px-1.5 py-0.5 bg-surface-container-high rounded text-xs font-mono"
+                    >users</code
+                  >
+                  と
+                  <code
+                    class="px-1.5 py-0.5 bg-surface-container-high rounded text-xs font-mono"
+                    >event_participants</code
+                  >
+                  の分離
+                </p>
+                <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                  現状はゲスト利用が中心ですが、ユーザー情報とイベント内の参加状態を分けているため、
+                  認証を導入しても表示名や参加履歴の扱いを整理しやすい構成です。
+                </p>
+              </article>
+
+              <article
+                class="bg-surface-container-low rounded-2xl p-6 border border-outline-variant/30 space-y-3"
+              >
+                <h3 class="font-headline text-lg font-bold text-on-background">
+                  通知・招待導線の強化
+                </h3>
+                <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                  <span class="font-bold text-primary">関連する構成:</span>
+                  招待コード、参加状態、
+                  <code
+                    class="px-1.5 py-0.5 bg-surface-container-high rounded text-xs font-mono"
+                    >joined_at / left_at</code
+                  >
+                </p>
+                <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                  誰が参加中か、いつ参加・退出したかを持てるため、
+                  招待通知やリマインド通知のような機能を後から足す場合も、状態の起点を置きやすくなっています。
+                </p>
+              </article>
+
+              <article
+                class="bg-surface-container-low rounded-2xl p-6 border border-outline-variant/30 space-y-3"
+              >
+                <h3 class="font-headline text-lg font-bold text-on-background">
+                  既存ロジックを崩さない機能追加
+                </h3>
+                <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                  <span class="font-bold text-primary">関連する構成:</span>
+                  APIテスト、精算補助関数のテスト、責務分離
+                </p>
+                <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                  イベント作成、支出追加、精算API、金額変換の補助関数を既に確認しているため、
+                  新しい仕様を加える際も、計算や配分の土台を壊していないかを追いやすい状態です。
+                </p>
+              </article>
+            </div>
+          </section>
+
+          <section
+            class="bg-surface p-8 md:p-10 rounded-3xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
+          >
+            <h2
+              class="font-headline text-2xl font-bold text-on-background mb-6 flex items-center gap-2"
+            >
+              <span class="material-symbols-outlined text-primary">link</span>
+              関連リンク
+            </h2>
+            <div class="flex flex-wrap gap-4">
+              <a
+                class="inline-flex items-center justify-center px-8 py-4 bg-primary text-on-primary rounded-xl font-bold hover:bg-opacity-90 transition-all shadow-[0_4px_20px_rgba(46,50,48,0.15)] hover:shadow-[0_6px_24px_rgba(46,50,48,0.2)]"
+                href="https://github.com/arakawa-rin/app_project"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHubリポジトリを見る
+                <span
+                  class="material-symbols-outlined ml-2 text-sm"
+                  >open_in_new</span
+                >
+              </a>
+              <a
+                class="inline-flex items-center justify-center px-8 py-4 bg-surface text-primary border border-outline-variant rounded-xl font-bold hover:bg-surface-container transition-all"
+                href="https://tripsplit-prn0.onrender.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Web体験版リンク
+                <span
+                  class="material-symbols-outlined ml-2 text-sm"
+                  >open_in_new</span
+                >
+              </a>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full mt-auto bg-[#faf6f0] border-t border-stone-200">
+      <div
+        class="flex flex-col md:flex-row justify-between items-center px-8 py-12 max-w-7xl mx-auto gap-8 md:gap-4"
+      >
+        <div class="font-['Literata'] font-semibold text-[#4a7c59] text-lg">
+          My Portfolio
+        </div>
+        <div class="w-full md:w-auto max-w-md">
+          <label
+            class="block font-['Nunito_Sans'] text-sm font-bold text-stone-600 mb-2"
+            for="footer-email"
+          >
+            Email
+          </label>
+          <div
+            class="flex items-center gap-3 rounded-2xl border border-stone-300 bg-white px-4 py-3 shadow-sm"
+          >
+            <span class="material-symbols-outlined text-[#4a7c59]"
+              >mail</span
+            >
+            <input
+              id="footer-email"
+              class="w-full bg-transparent font-['Nunito_Sans'] text-stone-700 placeholder:text-stone-400 focus:outline-none"
+              type="email"
+              placeholder="your-email@example.com"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

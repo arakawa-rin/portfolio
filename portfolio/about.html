@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>About | My Portfolio</title>
+    <meta
+      content="就職活動向けポートフォリオサイトの自己紹介ページ。"
+      name="description"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,200..900&amp;family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/tailwind.css" />
+  </head>
+  <body
+    class="min-h-screen flex flex-col antialiased selection:bg-primary selection:text-on-primary"
+  >
+    <!-- TopAppBar -->
+    <header
+      class="w-full top-0 sticky z-50 bg-[#faf6f0] border-b border-stone-200 shadow-sm transition-colors duration-300 ease-in-out"
+    >
+      <div
+        class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto"
+      >
+        <a
+          class="font-['Literata'] text-xl font-bold text-[#4a7c59] hover:text-opacity-80 transition-opacity"
+          href="index.html"
+        >
+          My Portfolio
+        </a>
+        <nav
+          class="hidden md:flex items-center gap-8 font-['Nunito_Sans'] font-medium"
+        >
+          <a
+            class="text-stone-600 hover:text-[#4a7c59] transition-colors duration-300 ease-in-out"
+            href="index.html"
+            >Top</a
+          >
+          <a
+            class="text-[#4a7c59] border-b-2 border-[#4a7c59] pb-1 duration-300 ease-in-out"
+            href="about.html"
+            >About</a
+          >
+          <a
+            class="text-stone-600 hover:text-[#4a7c59] transition-colors duration-300 ease-in-out"
+            href="works.html"
+            >Works</a
+          >
+        </nav>
+      </div>
+    </header>
+    <main class="grow">
+      <!-- Page Hero -->
+      <section class="relative pt-24 pb-16 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto text-center space-y-4">
+          <p
+            class="font-body text-primary font-bold uppercase tracking-wider text-sm"
+          >
+            About
+          </p>
+          <h1
+            class="font-headline text-4xl md:text-5xl font-bold text-on-background"
+          >
+            自己紹介
+          </h1>
+          <p
+            class="font-body text-lg text-on-surface-variant max-w-2xl mx-auto"
+          >
+            これまでの経歴や現在の取り組みについてまとめています。
+          </p>
+        </div>
+      </section>
+      <!-- Profile Section -->
+      <section class="py-12 px-6">
+        <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <!-- Image Placeholder -->
+          <div class="lg:col-span-1">
+            <div
+              class="bg-surface p-6 rounded-3xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30 flex flex-col items-center"
+            >
+              <div
+                class="w-48 h-48 bg-surface-variant rounded-full flex items-center justify-center mb-6 text-on-surface-variant"
+              >
+                <span class="material-symbols-outlined text-5xl">face</span>
+              </div>
+              <p class="text-sm text-center text-on-surface-variant">
+                顔写真・アイコン用<br />
+                画像を入れない場合は、この枠を削除しても構いません。
+              </p>
+            </div>
+          </div>
+          <!-- Profile Details -->
+          <div class="lg:col-span-2 space-y-8">
+            <section
+              class="bg-surface p-8 md:p-10 rounded-3xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
+            >
+              <h2
+                class="font-headline text-2xl font-bold text-on-background mb-6 flex items-center gap-2"
+              >
+                <span class="material-symbols-outlined text-primary"
+                  >person</span
+                >
+                プロフィール
+              </h2>
+              <dl class="grid grid-cols-1 md:grid-cols-2 gap-6 text-on-surface">
+                <div class="space-y-1">
+                  <dt class="text-sm text-on-surface-variant font-medium">
+                    氏名
+                  </dt>
+                  <dd class="text-lg font-bold">山田 太郎</dd>
+                </div>
+                <div class="space-y-1">
+                  <dt class="text-sm text-on-surface-variant font-medium">
+                    経歴
+                  </dt>
+                  <dd class="text-lg font-bold">
+                    2026年3月に○○大学○○学部を卒業
+                  </dd>
+                </div>
+                <div class="space-y-1">
+                  <dt class="text-sm text-on-surface-variant font-medium">
+                    志望職種
+                  </dt>
+                  <dd class="text-lg font-bold">エンジニア</dd>
+                </div>
+                <div class="space-y-1">
+                  <dt class="text-sm text-on-surface-variant font-medium">
+                    資格
+                  </dt>
+                  <dd class="text-lg font-bold">
+                    python 3 エンジニア基礎認定試験
+                  </dd>
+                </div>
+              </dl>
+            </section>
+            <section
+              class="bg-surface p-8 md:p-10 rounded-3xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
+            >
+              <h2
+                class="font-headline text-2xl font-bold text-on-background mb-6 flex items-center gap-2"
+              >
+                <span class="material-symbols-outlined text-primary"
+                  >edit_document</span
+                >
+                自己紹介
+              </h2>
+              <p
+                class="font-body text-on-surface-variant leading-relaxed space-y-4"
+              >
+                大学ではビジネス領域に進み、経営学やマーケティング、キャリア論、組織論などを中心に学びました。企業活動や市場の仕組み、人の働き方などを多角的に学ぶ中で、社会の仕組みやビジネスの構造を理解することに興味を持つようになりました。<br /><br />
+                これまで私は、新しいことに挑戦する際には自ら調べ、試行錯誤しながら理解を深めていく姿勢を大切にしてきました。大学受験の勉強も独学で取り組み、現在のプログラミング学習についても、自ら情報を調べながら学習を進めています。新しい知識や技術を知ることが好きで、理解を深めていく過程そのものを楽しめるタイプです。<br /><br />
+                また、一つのことに継続して取り組むことも自分の強みだと考えています。小学生の時に始めたサッカーは10年以上続けており、飲食店でのアルバイトも4年間継続してきました。現在取り組んでいるプログラミング学習も、時には壁にぶつかりながらも試行錯誤を重ね、継続して取り組んでいます。<br /><br />
+                こうした経験を通して培ってきた自走力と継続力を活かし、技術を通して課題解決に貢献できるエンジニアとして成長していきたいと考えています。
+              </p>
+            </section>
+          </div>
+        </div>
+      </section>
+      <!-- Background & Career Section -->
+      <section class="py-16 px-6 bg-surface-container-low">
+        <div class="max-w-5xl mx-auto space-y-8">
+          <section
+            class="bg-surface p-8 md:p-10 rounded-3xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
+          >
+            <h2
+              class="font-headline text-2xl font-bold text-on-background mb-6 flex items-center gap-2"
+            >
+              <span class="material-symbols-outlined text-primary">school</span>
+              学習背景・興味分野
+            </h2>
+            <p
+              class="font-body text-on-surface-variant leading-relaxed text-sm p-4 bg-surface-variant/30 rounded-xl border border-outline-variant/50"
+            >
+              <!-- 後で学習背景や興味分野に差し替えてください -->
+              大学や独学、授業、個人開発などを通して学んできた内容をまとめる想定です。
+              たとえば、Web制作、アプリ開発、UI/UX、バックエンドへの関心などを整理して書けます。
+            </p>
+          </section>
+          <section
+            class="bg-surface p-8 md:p-10 rounded-3xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
+          >
+            <h2
+              class="font-headline text-2xl font-bold text-on-background mb-8 flex items-center gap-2"
+            >
+              <span class="material-symbols-outlined text-primary"
+                >timeline</span
+              >
+              経歴
+            </h2>
+            <div
+              class="relative border-l-2 border-primary/20 ml-3 md:ml-6 space-y-10"
+            >
+              <div class="relative pl-8 md:pl-10">
+                <div
+                  class="absolute w-4 h-4 bg-primary rounded-full -left-2.25 top-1.5 ring-4 ring-surface"
+                ></div>
+                <p class="text-sm font-bold text-primary mb-1">2022年4月</p>
+                <h3
+                  class="font-headline text-xl font-bold text-on-background mb-2"
+                >
+                  法政大学キャリアデザイン学部に入学
+                </h3>
+                <p class="font-body text-on-surface-variant">
+                  ビジネス領域に進み、マーケティングや経営戦略、組織構想論を学びました。
+                </p>
+              </div>
+              <div class="relative pl-8 md:pl-10">
+                <div
+                  class="absolute w-4 h-4 bg-primary rounded-full -left-2.25 top-1.5 ring-4 ring-surface"
+                ></div>
+                <p class="text-sm font-bold text-primary mb-1">2024年</p>
+                <h3
+                  class="font-headline text-xl font-bold text-on-background mb-2"
+                >
+                  IT業界に興味を持つ
+                </h3>
+                <p class="font-body text-on-surface-variant">
+                  技術を通じて課題解決に貢献し、価値提供できる点に魅力を感じ、IT業界を志望
+                </p>
+              </div>
+              <div class="relative pl-8 md:pl-10">
+                <div
+                  class="absolute w-4 h-4 bg-primary rounded-full -left-2.25 top-1.5 ring-4 ring-surface"
+                ></div>
+                <p class="text-sm font-bold text-primary mb-1">2025年</p>
+                <h3
+                  class="font-headline text-xl font-bold text-on-background mb-2"
+                >
+                  エンジニアを志す
+                </h3>
+                <p class="font-body text-on-surface-variant">
+                  基礎知識の習得に向けて資格取得に取り組み、実践的な経験を積むため、アプリ開発に取り組む
+                </p>
+              </div>
+              <div class="relative pl-8 md:pl-10">
+                <div
+                  class="absolute w-4 h-4 bg-primary rounded-full -left-2.25 top-1.5 ring-4 ring-surface"
+                ></div>
+                <p class="text-sm font-bold text-primary mb-1">2026年3月</p>
+                <h3
+                  class="font-headline text-xl font-bold text-on-background mb-2"
+                >
+                  法政大学キャリアデザイン学部を卒業
+                </h3>
+                <p class="font-body text-on-surface-variant">
+                  学習と制作を継続しながら、エンジニアとして成長できる環境を目指して就職活動を進めています。
+                </p>
+              </div>
+            </div>
+          </section>
+          <section
+            class="bg-surface p-8 md:p-10 rounded-3xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
+          >
+            <h2
+              class="font-headline text-2xl font-bold text-on-background mb-6 flex items-center gap-2"
+            >
+              <span class="material-symbols-outlined text-primary"
+                >handyman</span
+              >
+              スキル・使用技術
+            </h2>
+            <div class="flex flex-wrap gap-3">
+              <span
+                class="px-4 py-2 bg-secondary-container text-on-secondary-container rounded-lg font-medium text-sm"
+                >HTML</span
+              >
+              <span
+                class="px-4 py-2 bg-secondary-container text-on-secondary-container rounded-lg font-medium text-sm"
+                >CSS</span
+              >
+              <span
+                class="px-4 py-2 bg-secondary-container text-on-secondary-container rounded-lg font-medium text-sm"
+                >python3</span
+              >
+              <span
+                class="px-4 py-2 bg-secondary-container text-on-secondary-container rounded-lg font-medium text-sm"
+                >JavaScript</span
+              >
+              <span
+                class="px-4 py-2 bg-secondary-container text-on-secondary-container rounded-lg font-medium text-sm"
+                >TypeScript</span
+              >
+              <span
+                class="px-4 py-2 bg-secondary-container text-on-secondary-container rounded-lg font-medium text-sm"
+                >Git / GitHub</span
+              >
+              <span
+                class="px-4 py-2 bg-secondary-container text-on-secondary-container rounded-lg font-medium text-sm"
+                >MySQL</span
+              >
+              <span
+                class="px-4 py-2 bg-secondary-container text-on-secondary-container rounded-lg font-medium text-sm"
+                >PostgreSQL</span
+              >
+            </div>
+          </section>
+          <section
+            class="bg-surface p-8 md:p-10 rounded-3xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
+          >
+            <h2
+              class="font-headline text-2xl font-bold text-on-background mb-6 flex items-center gap-2"
+            >
+              <span class="material-symbols-outlined text-primary"
+                >explore</span
+              >
+              将来・志望職種
+            </h2>
+            <p class="font-body text-on-surface-variant leading-relaxed">
+              将来は、単に実装を行うだけでなく、顧客やユーザーの課題を理解し、その解決に主体的に関われるエンジニアになりたいと考えています。
+              顧客の視点に立ちながら、何が最も価値のある解決策なのかを考え、技術を通じて課題解決に貢献できるエンジニアを目指しています。
+              与えられた仕様を実装するだけでなく、プロダクトをより良くするための判断や意思決定にも関われるようなエンジニアへ成長していきたいと考えています。
+            </p>
+          </section>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="w-full mt-auto bg-[#faf6f0] border-t border-stone-200">
+      <div
+        class="flex flex-col md:flex-row justify-between items-center px-8 py-12 max-w-7xl mx-auto gap-8 md:gap-4"
+      >
+        <div class="font-['Literata'] font-semibold text-[#4a7c59] text-lg">
+          My Portfolio
+        </div>
+        <div
+          class="flex flex-col items-center md:items-end text-sm text-stone-600 gap-2"
+        >
+          <p class="font-bold text-[#4a7c59] mb-1"><br /></p>
+          <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-6">
+            <div class="flex items-center gap-2">
+              <span class="font-medium"><br /></span>
+              <span class=""><br /></span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="font-medium"><br /></span>
+              <a
+                class="hover:text-[#4a7c59] transition-colors"
+                href="mailto:hanako.yamada@example.com"
+                ><br
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
