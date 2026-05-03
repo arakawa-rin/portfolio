@@ -19,6 +19,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/portfolio-flow.css" />
   </head>
   <body
     class="min-h-screen flex flex-col antialiased selection:bg-primary selection:text-on-primary"
@@ -343,213 +344,268 @@
           <section
             class="bg-surface p-8 md:p-10 rounded-3xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
           >
-            <h2
-              class="font-headline text-2xl font-bold text-on-background mb-8 flex items-center gap-2"
-            >
-              <span class="material-symbols-outlined text-primary"
-                >photo_library</span
+            <div class="mb-10 space-y-4">
+              <h2
+                class="font-headline text-2xl font-bold text-on-background flex items-center gap-2"
               >
-              スクリーンショット
-            </h2>
-            <div class="space-y-10">
-              <div>
-                <h3
-                  class="font-headline text-lg font-bold text-on-background mb-4"
+                <span class="material-symbols-outlined text-primary"
+                  >photo_library</span
                 >
-                  主要画面
-                </h3>
-                <div
-                  class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6"
+                Paylogの使い方とスクリーンショット
+              </h2>
+              <p class="font-body text-on-surface-variant leading-relaxed">
+                イベントを作成して、支出を追加し、最後に精算結果を確認するまでの流れを実際の画面遷移に沿って並べています。
+              </p>
+            </div>
+
+            <div class="space-y-12">
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <article
+                  class="h-full bg-surface-container-low rounded-2xl border border-outline-variant/30 p-6 space-y-5"
                 >
-                  <figure class="space-y-3">
-                    <img
-                      class="w-full rounded-2xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
-                      src="images/paylog-screen-event-list.jpg"
-                      alt="PayLogのイベント一覧画面"
-                    />
-                    <figcaption class="space-y-1">
-                      <p
-                        class="font-body font-bold text-sm text-on-background"
+                  <div class="space-y-3">
+                    <span
+                      class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-primary text-on-primary font-body font-bold"
+                      >1</span
+                    >
+                    <h3 class="font-headline text-xl font-bold text-on-background">
+                      イベント作成
+                    </h3>
+                    <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                      旅行やイベント名、参加者、日付を登録して、精算の単位になるイベントを作ります。
+                    </p>
+                  </div>
+                  <div class="flex justify-center">
+                    <div
+                      class="w-full max-w-[210px] aspect-[9/16] rounded-[2rem] border border-outline-variant/40 bg-surface shadow-[0_8px_26px_rgba(46,50,48,0.08)] p-3"
+                    >
+                      <div
+                        class="h-full rounded-[1.5rem] border border-dashed border-outline-variant/70 bg-surface-container-low flex flex-col items-center justify-center gap-3 text-center text-on-surface-variant"
                       >
-                        イベント一覧
-                      </p>
-                      <p class="font-body text-xs text-on-surface-variant">
-                        作成済みイベントを一覧で確認できる画面です。
-                      </p>
-                    </figcaption>
-                  </figure>
-                  <figure class="space-y-3">
-                    <img
-                      class="w-full rounded-2xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
-                      src="images/paylog-screen-event-create.jpg"
-                      alt="PayLogのイベント作成画面"
-                    />
-                    <figcaption class="space-y-1">
-                      <p
-                        class="font-body font-bold text-sm text-on-background"
+                        <span class="material-symbols-outlined text-4xl text-primary"
+                          >add_circle</span
+                        >
+                        <span class="font-body text-sm font-bold">イベント作成</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article
+                  class="h-full bg-surface-container-low rounded-2xl border border-outline-variant/30 p-6 space-y-5"
+                >
+                  <div class="space-y-3">
+                    <span
+                      class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-primary text-on-primary font-body font-bold"
+                      >2</span
+                    >
+                    <h3 class="font-headline text-xl font-bold text-on-background">
+                      イベント一覧
+                    </h3>
+                    <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                      作成済みのイベントを一覧から選び、支出の追加や精算確認へ進みます。
+                    </p>
+                  </div>
+                  <div class="flex justify-center">
+                    <div
+                      class="w-full max-w-[210px] aspect-[9/16] rounded-[2rem] border border-outline-variant/40 bg-surface shadow-[0_8px_26px_rgba(46,50,48,0.08)] p-3"
+                    >
+                      <div
+                        class="h-full rounded-[1.5rem] border border-dashed border-outline-variant/70 bg-surface-container-low flex flex-col items-center justify-center gap-3 text-center text-on-surface-variant"
                       >
-                        イベント作成
-                      </p>
-                      <p class="font-body text-xs text-on-surface-variant">
-                        イベント名、参加者、日付を入力して開始できます。
-                      </p>
-                    </figcaption>
-                  </figure>
-                  <figure class="space-y-3">
-                    <img
-                      class="w-full rounded-2xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
-                      src="images/paylog-screen-event-detail.jpg"
-                      alt="PayLogのイベント詳細画面"
-                    />
-                    <figcaption class="space-y-1">
-                      <p
-                        class="font-body font-bold text-sm text-on-background"
+                        <span class="material-symbols-outlined text-4xl text-primary"
+                          >format_list_bulleted</span
+                        >
+                        <span class="font-body text-sm font-bold">イベント一覧</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article
+                  class="h-full bg-surface-container-low rounded-2xl border border-outline-variant/30 p-6 space-y-5"
+                >
+                  <div class="space-y-3">
+                    <span
+                      class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-primary text-on-primary font-body font-bold"
+                      >3</span
+                    >
+                    <h3 class="font-headline text-xl font-bold text-on-background">
+                      イベント詳細
+                    </h3>
+                    <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                      参加者と最近の支出を確認しながら、必要に応じて支出追加や精算へ移動します。
+                    </p>
+                  </div>
+                  <div class="flex justify-center">
+                    <div
+                      class="w-full max-w-[210px] aspect-[9/16] rounded-[2rem] border border-outline-variant/40 bg-surface shadow-[0_8px_26px_rgba(46,50,48,0.08)] p-3"
+                    >
+                      <div
+                        class="h-full rounded-[1.5rem] border border-dashed border-outline-variant/70 bg-surface-container-low flex flex-col items-center justify-center gap-3 text-center text-on-surface-variant"
                       >
-                        イベント詳細
-                      </p>
-                      <p class="font-body text-xs text-on-surface-variant">
-                        参加者と最近の支出をまとめて確認できます。
-                      </p>
-                    </figcaption>
-                  </figure>
-                  <figure class="space-y-3">
-                    <img
-                      class="w-full rounded-2xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
-                      src="images/paylog-screen-add-expense.jpg"
-                      alt="PayLogの支出追加画面"
-                    />
-                    <figcaption class="space-y-1">
-                      <p
-                        class="font-body font-bold text-sm text-on-background"
-                      >
-                        支出追加
-                      </p>
-                      <p class="font-body text-xs text-on-surface-variant">
-                        金額、費目、日付を入力して支出を記録する画面です。
-                      </p>
-                    </figcaption>
-                  </figure>
-                  <figure class="space-y-3">
-                    <img
-                      class="w-full rounded-2xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
-                      src="images/paylog-screen-settlement.jpg"
-                      alt="PayLogの精算結果画面"
-                    />
-                    <figcaption class="space-y-1">
-                      <p
-                        class="font-body font-bold text-sm text-on-background"
-                      >
-                        精算結果
-                      </p>
-                      <p class="font-body text-xs text-on-surface-variant">
-                        参加者ごとの立替額と支払額を整理して確認できます。
-                      </p>
-                    </figcaption>
-                  </figure>
-                </div>
+                        <span class="material-symbols-outlined text-4xl text-primary"
+                          >dashboard</span
+                        >
+                        <span class="font-body text-sm font-bold">イベント詳細</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
               </div>
 
-              <div>
-                <h3
-                  class="font-headline text-lg font-bold text-on-background mb-2"
-                >
-                  支出追加の各ステップ
-                </h3>
-                <p
-                  class="font-body text-sm text-on-surface-variant mb-4"
-                >
-                  情報量が多いため、入力ステップごとに画面を分けて掲載しています。
-                </p>
-                <div
-                  class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6"
-                >
-                  <figure class="space-y-3">
-                    <img
-                      class="w-full rounded-2xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
-                      src="images/paylog-screen-add-expense-1.jpg"
-                      alt="PayLogの支出追加画面 - 金額・費目・支出日の入力"
-                    />
-                    <figcaption class="space-y-1">
-                      <p
-                        class="font-body font-bold text-sm text-on-background"
-                      >
-                        ① 金額・費目・支出日
+              <article class="space-y-6">
+                <div class="grid gap-6 md:grid-cols-[220px_1fr]">
+                  <div class="space-y-3">
+                    <span
+                      class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-primary text-on-primary font-body font-bold"
+                      >4</span
+                    >
+                    <h3 class="font-headline text-xl font-bold text-on-background">
+                      支出を追加
+                    </h3>
+                    <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                      支払った金額や費目を入れ、使う場面に合わせて割り勘モードか口数割モードを選びます。
+                    </p>
+                  </div>
+                  <div class="space-y-8">
+                    <div class="space-y-4">
+                      <div class="flex items-center gap-3">
+                        <span
+                          class="material-symbols-outlined text-primary"
+                          >splitscreen</span
+                        >
+                        <h4 class="font-headline text-lg font-bold text-on-background">
+                          割り勘モード
+                        </h4>
+                        <span class="font-body text-xs text-on-surface-variant"
+                          >2枚</span
+                        >
+                      </div>
+                      <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                        立替人と負担者を選ぶだけで、一律の割り勘をすばやく登録できます。
                       </p>
-                      <p class="font-body text-xs text-on-surface-variant">
-                        金額と費目を入力し、カレンダーから支出日を選択します。
+                      <div class="grid grid-cols-2 gap-4 md:max-w-md">
+                        <div
+                          class="aspect-[9/16] rounded-[2rem] border border-outline-variant/40 bg-surface-container-low p-3 shadow-[0_8px_26px_rgba(46,50,48,0.08)]"
+                        >
+                          <div
+                            class="h-full rounded-[1.5rem] border border-dashed border-outline-variant/70 bg-surface flex items-center justify-center text-center"
+                          >
+                            <span class="font-body text-sm font-bold text-on-surface-variant"
+                              >割り勘 1</span
+                            >
+                          </div>
+                        </div>
+                        <div
+                          class="aspect-[9/16] rounded-[2rem] border border-outline-variant/40 bg-surface-container-low p-3 shadow-[0_8px_26px_rgba(46,50,48,0.08)]"
+                        >
+                          <div
+                            class="h-full rounded-[1.5rem] border border-dashed border-outline-variant/70 bg-surface flex items-center justify-center text-center"
+                          >
+                            <span class="font-body text-sm font-bold text-on-surface-variant"
+                              >割り勘 2</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="space-y-4">
+                      <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary"
+                          >calculate</span
+                        >
+                        <h4 class="font-headline text-lg font-bold text-on-background">
+                          口数割モード
+                        </h4>
+                        <span class="font-body text-xs text-on-surface-variant"
+                          >3枚</span
+                        >
+                      </div>
+                      <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                        1口単価と参加者ごとの口数を入力し、合計や過不足を見ながら傾斜のある負担額を決められます。
                       </p>
-                    </figcaption>
-                  </figure>
-                  <figure class="space-y-3">
-                    <img
-                      class="w-full rounded-2xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
-                      src="images/paylog-screen-add-expense-2.jpg"
-                      alt="PayLogの支出追加画面 - 負担者の選択"
-                    />
-                    <figcaption class="space-y-1">
-                      <p
-                        class="font-body font-bold text-sm text-on-background"
-                      >
-                        ② 負担者の選択
-                      </p>
-                      <p class="font-body text-xs text-on-surface-variant">
-                        参加者の中から、その支出を負担する人を選びます。
-                      </p>
-                    </figcaption>
-                  </figure>
-                  <figure class="space-y-3">
-                    <img
-                      class="w-full rounded-2xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
-                      src="images/paylog-screen-add-expense-3.jpg"
-                      alt="PayLogの支出追加画面 - 口数と合計のリアルタイム計算"
-                    />
-                    <figcaption class="space-y-1">
-                      <p
-                        class="font-body font-bold text-sm text-on-background"
-                      >
-                        ③ 合計と過不足の表示
-                      </p>
-                      <p class="font-body text-xs text-on-surface-variant">
-                        入力中の合計と支出金額との差分をその場で確認できます。
-                      </p>
-                    </figcaption>
-                  </figure>
-                  <figure class="space-y-3">
-                    <img
-                      class="w-full rounded-2xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
-                      src="images/paylog-screen-add-expense-4.jpg"
-                      alt="PayLogの支出追加画面 - 口数割モードの設定"
-                    />
-                    <figcaption class="space-y-1">
-                      <p
-                        class="font-body font-bold text-sm text-on-background"
-                      >
-                        ④ 口数割モード
-                      </p>
-                      <p class="font-body text-xs text-on-surface-variant">
-                        1口単価と各人の口数から、傾斜割り勘を自動計算します。
-                      </p>
-                    </figcaption>
-                  </figure>
-                  <figure class="space-y-3">
-                    <img
-                      class="w-full rounded-2xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
-                      src="images/paylog-screen-add-expense-5.jpg"
-                      alt="PayLogの支出追加画面 - 割り勘モードと立替人選択"
-                    />
-                    <figcaption class="space-y-1">
-                      <p
-                        class="font-body font-bold text-sm text-on-background"
-                      >
-                        ⑤ 割り勘モード
-                      </p>
-                      <p class="font-body text-xs text-on-surface-variant">
-                        一律割り勘に切り替え、立替人を選んで登録します。
-                      </p>
-                    </figcaption>
-                  </figure>
+                      <div class="grid grid-cols-2 gap-4 md:grid-cols-3 md:max-w-2xl">
+                        <div
+                          class="aspect-[9/16] rounded-[2rem] border border-outline-variant/40 bg-surface-container-low p-3 shadow-[0_8px_26px_rgba(46,50,48,0.08)]"
+                        >
+                          <div
+                            class="h-full rounded-[1.5rem] border border-dashed border-outline-variant/70 bg-surface flex items-center justify-center text-center"
+                          >
+                            <span class="font-body text-sm font-bold text-on-surface-variant"
+                              >口数割 1</span
+                            >
+                          </div>
+                        </div>
+                        <div
+                          class="aspect-[9/16] rounded-[2rem] border border-outline-variant/40 bg-surface-container-low p-3 shadow-[0_8px_26px_rgba(46,50,48,0.08)]"
+                        >
+                          <div
+                            class="h-full rounded-[1.5rem] border border-dashed border-outline-variant/70 bg-surface flex items-center justify-center text-center"
+                          >
+                            <span class="font-body text-sm font-bold text-on-surface-variant"
+                              >口数割 2</span
+                            >
+                          </div>
+                        </div>
+                        <div
+                          class="aspect-[9/16] rounded-[2rem] border border-outline-variant/40 bg-surface-container-low p-3 shadow-[0_8px_26px_rgba(46,50,48,0.08)]"
+                        >
+                          <div
+                            class="h-full rounded-[1.5rem] border border-dashed border-outline-variant/70 bg-surface flex items-center justify-center text-center"
+                          >
+                            <span class="font-body text-sm font-bold text-on-surface-variant"
+                              >口数割 3</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </article>
+
+              <article class="grid gap-6 md:grid-cols-[220px_1fr] md:items-center">
+                <div class="space-y-3">
+                  <span
+                    class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-primary text-on-primary font-body font-bold"
+                    >5</span
+                  >
+                  <h3 class="font-headline text-xl font-bold text-on-background">
+                    精算結果
+                  </h3>
+                  <p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                    参加者ごとの負担額と立替額をもとに、誰が誰へいくら支払うかを確認します。
+                  </p>
+                </div>
+                <div class="grid grid-cols-2 gap-4 md:max-w-md">
+                  <div
+                    class="aspect-[9/16] rounded-[2rem] border border-outline-variant/40 bg-surface-container-low p-3 shadow-[0_8px_26px_rgba(46,50,48,0.08)]"
+                  >
+                    <div
+                      class="h-full rounded-[1.5rem] border border-dashed border-outline-variant/70 bg-surface flex flex-col items-center justify-center gap-3 text-center text-on-surface-variant"
+                    >
+                      <span class="material-symbols-outlined text-4xl text-primary"
+                        >payments</span
+                      >
+                      <span class="font-body text-sm font-bold">精算結果 1</span>
+                    </div>
+                  </div>
+                  <div
+                    class="aspect-[9/16] rounded-[2rem] border border-outline-variant/40 bg-surface-container-low p-3 shadow-[0_8px_26px_rgba(46,50,48,0.08)]"
+                  >
+                    <div
+                      class="h-full rounded-[1.5rem] border border-dashed border-outline-variant/70 bg-surface flex flex-col items-center justify-center gap-3 text-center text-on-surface-variant"
+                    >
+                      <span class="material-symbols-outlined text-4xl text-primary"
+                        >receipt_long</span
+                      >
+                      <span class="font-body text-sm font-bold">精算結果 2</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
             </div>
           </section>
 
@@ -654,21 +710,6 @@
                   >
                   を Flask から配信します。
                   本番では同一オリジン、ローカルでは CORS を許可する構成にしています。
-                </p>
-              </article>
-              <article
-                class="bg-surface-container-low rounded-2xl p-6 border border-outline-variant/30 space-y-3 md:col-span-2"
-              >
-                <h3
-                  class="font-headline text-lg font-bold text-primary"
-                >
-                  Testing / Others
-                </h3>
-                <p
-                  class="font-body text-sm text-on-surface-variant leading-relaxed"
-                >
-                  pytest による API 結合テストと、精算補助関数のユニットテストを用意しています。
-                  金額計算には Python の Decimal を使い、浮動小数点による誤差を避けています。
                 </p>
               </article>
             </div>
@@ -842,30 +883,6 @@
                     alt="PayLogの支出追加画面 - 入力途中の合計と口数、過不足メッセージを表示する入力待ちカード"
                   />
                 </div>
-                <pre
-                  class="bg-surface-container-high rounded-xl p-4 overflow-x-auto text-xs font-mono text-on-surface leading-relaxed"
-                ><code>const unitSummaryTone =
-  !hasExpenseAmount || !hasUnitPrice
-    ? "neutral"
-    : remainingAmount === 0
-      ? "success"
-      : remainingAmount &gt; 0
-        ? "info"
-        : "warning";
-
-const unitSummaryMessage =
-  !hasExpenseAmount || !hasUnitPrice
-    ? "支出金額と1口単価を入力すると自動計算されます"
-    : remainingAmount === 0
-      ? "口数と金額が一致しています"
-      : remainingAmount &gt; 0
-        ? `あと${remainingUnits}口で一致します`
-        : `${Math.abs(remainingUnits ?? 0)}口分オーバーしています`;
-
-&lt;Text style={styles.unitSummaryValue}&gt;
-  {hasUnitPrice ? formatYen(computedAmount) : "¥0"}
-&lt;/Text&gt;
-&lt;Text style={styles.unitSummaryMessage}&gt;{unitSummaryMessage}&lt;/Text&gt;</code></pre>
               </article>
 
               <article
@@ -893,30 +910,6 @@ const unitSummaryMessage =
                     alt="PayLogのイベント詳細 - 最近の支出を検索バーとソートで整理した一覧"
                   />
                 </div>
-                <pre
-                  class="bg-surface-container-high rounded-xl p-4 overflow-x-auto text-xs font-mono text-on-surface leading-relaxed"
-                ><code>const [searchQuery, setSearchQuery] = useState("");
-const [sortOrder, setSortOrder] = useState&lt;
-  "date_desc" | "date_asc" | "amount_desc" | "amount_asc"
-&gt;("date_desc");
-const [participantsExpanded, setParticipantsExpanded] = useState(false);
-const [expensesExpanded, setExpensesExpanded] = useState(false);
-
-const filtered = [...details.expenses]
-  .filter(
-    (e) =&gt;
-      (e.category_name ?? "カテゴリなし").includes(searchQuery) ||
-      e.payer_name.includes(searchQuery),
-  )
-  .sort((a, b) =&gt; {
-    if (sortOrder === "date_desc") {
-      return new Date(b.expense_at).getTime() - new Date(a.expense_at).getTime();
-    }
-    if (sortOrder === "amount_desc") {
-      return parseFloat(b.expense_amount) - parseFloat(a.expense_amount);
-    }
-    return parseFloat(a.expense_amount) - parseFloat(b.expense_amount);
-  });</code></pre>
               </article>
             </div>
           </section>
@@ -1207,24 +1200,23 @@ integer_summary, integer_settlements =
           My Portfolio
         </div>
         <div class="w-full md:w-auto max-w-md">
-          <label
+          <p
             class="block font-['Nunito_Sans'] text-sm font-bold text-stone-600 mb-2"
-            for="footer-email"
           >
             Email
-          </label>
+          </p>
           <div
             class="flex items-center gap-3 rounded-2xl border border-stone-300 bg-white px-4 py-3 shadow-sm"
           >
             <span class="material-symbols-outlined text-[#4a7c59]"
               >mail</span
             >
-            <input
-              id="footer-email"
-              class="w-full bg-transparent font-['Nunito_Sans'] text-stone-700 placeholder:text-stone-400 focus:outline-none"
-              type="email"
-              placeholder="your-email@example.com"
-            />
+            <a
+              class="font-['Nunito_Sans'] text-stone-700 hover:text-[#4a7c59] transition-colors duration-300 ease-in-out break-all"
+              href="mailto:your-email@example.com"
+            >
+              your-email@example.com
+            </a>
           </div>
         </div>
       </div>

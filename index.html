@@ -33,7 +33,7 @@
         <nav class="hidden md:flex items-center gap-8 font-['Nunito_Sans'] font-medium">
           <a class="text-[#4a7c59] dark:text-emerald-400 border-b-2 border-[#4a7c59] pb-1 duration-300 ease-in-out" href="#">Home</a>
           <a class="text-stone-600 dark:text-stone-400 hover:text-[#4a7c59] dark:hover:text-emerald-400 transition-colors duration-300 ease-in-out" href="about.html">About</a>
-          <a class="text-stone-600 dark:text-stone-400 hover:text-[#4a7c59] dark:hover:text-emerald-400 transition-colors duration-300 ease-in-out" href="#">Works</a>
+          <a class="text-stone-600 dark:text-stone-400 hover:text-[#4a7c59] dark:hover:text-emerald-400 transition-colors duration-300 ease-in-out" href="works.html">Works</a>
         </nav>
       </div>
     </header>
@@ -56,7 +56,7 @@
               </a>
               <a
                 class="inline-flex items-center justify-center px-8 py-4 bg-surface text-primary border border-outline-variant rounded-xl font-bold hover:bg-surface-container transition-all"
-                href="#works"
+                href="works.html"
               >
                 制作実績を見る
               </a>
@@ -108,7 +108,7 @@
 
             <a
               class="group relative overflow-hidden rounded-3xl bg-surface p-10 flex flex-col h-full shadow-[0_4px_20px_rgba(46,50,48,0.06)] hover:shadow-[0_8px_30px_rgba(46,50,48,0.1)] transition-all duration-300 border border-transparent hover:border-outline-variant/30"
-              href="#works"
+              href="works.html"
             >
               <div class="absolute bottom-0 right-0 w-64 h-64 bg-tertiary-container rounded-full blur-3xl -mr-32 -mb-32 opacity-40 group-hover:opacity-60 transition-opacity"></div>
               <div class="relative z-10 grow">
@@ -130,20 +130,32 @@
       </section>
     </main>
 
-    <footer class="w-full mt-auto bg-[#faf6f0] dark:bg-stone-950 border-t border-stone-200 dark:border-stone-800">
-      <div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 max-w-7xl mx-auto gap-4">
-        <div class="font-['Literata'] font-semibold text-[#4a7c59]">My Portfolio</div>
-        <div class="font-['Nunito_Sans'] text-sm text-[#4a7c59] dark:text-emerald-500 opacity-80 hover:opacity-100 transition-opacity">
-          <br />
+    <footer class="w-full mt-auto bg-[#faf6f0] border-t border-stone-200">
+      <div
+        class="flex flex-col md:flex-row justify-between items-center px-8 py-12 max-w-7xl mx-auto gap-8 md:gap-4"
+      >
+        <div class="font-['Literata'] font-semibold text-[#4a7c59] text-lg">
+          My Portfolio
         </div>
-        <div class="flex gap-6 font-['Nunito_Sans'] text-sm">
-          <a class="text-stone-500 dark:text-stone-500 hover:text-[#4a7c59] dark:hover:text-emerald-400 opacity-80 hover:opacity-100 transition-opacity" href="#">GitHub</a>
-          <a class="text-stone-500 dark:text-stone-500 hover:text-[#4a7c59] dark:hover:text-emerald-400 opacity-80 hover:opacity-100 transition-opacity" href="#">
-            <br />
-          </a>
-          <a class="text-stone-500 dark:text-stone-500 hover:text-[#4a7c59] dark:hover:text-emerald-400 opacity-80 hover:opacity-100 transition-opacity" href="#">
-            <br />
-          </a>
+        <div class="w-full md:w-auto max-w-md">
+          <p
+            class="block font-['Nunito_Sans'] text-sm font-bold text-stone-600 mb-2"
+          >
+            Email
+          </p>
+          <div
+            class="flex items-center gap-3 rounded-2xl border border-stone-300 bg-white px-4 py-3 shadow-sm"
+          >
+            <span class="material-symbols-outlined text-[#4a7c59]"
+              >mail</span
+            >
+            <a
+              class="font-['Nunito_Sans'] text-stone-700 hover:text-[#4a7c59] transition-colors duration-300 ease-in-out break-all"
+              href="mailto:your-email@example.com"
+            >
+              your-email@example.com
+            </a>
+          </div>
         </div>
       </div>
     </footer>
