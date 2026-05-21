@@ -4,10 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>About | My Portfolio</title>
-    <meta
-      content="就職活動向けポートフォリオサイトの自己紹介ページ。"
-      name="description"
-    />
+    <meta content="ポートフォリオサイトの自己紹介ページ。" name="description" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,6 +16,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/portfolio-flow.css" />
   </head>
   <body
     class="min-h-screen flex flex-col antialiased selection:bg-primary selection:text-on-primary"
@@ -80,56 +78,34 @@
       </section>
       <!-- Profile Section -->
       <section class="py-12 px-6">
-        <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <!-- Image Placeholder -->
-          <div class="lg:col-span-1">
-            <div
-              class="bg-surface p-6 rounded-3xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30 flex flex-col items-center"
-            >
-              <div
-                class="w-48 h-48 bg-surface-variant rounded-full flex items-center justify-center mb-6 text-on-surface-variant"
-              >
-                <span class="material-symbols-outlined text-5xl">face</span>
-              </div>
-              <p class="text-sm text-center text-on-surface-variant">
-                顔写真・アイコン用<br />
-                画像を入れない場合は、この枠を削除しても構いません。
-              </p>
-            </div>
-          </div>
+        <div class="max-w-5xl mx-auto">
           <!-- Profile Details -->
-          <div class="lg:col-span-2 space-y-8">
+          <div class="space-y-5">
             <section
-              class="bg-surface p-8 md:p-10 rounded-3xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
+              class="bg-surface p-6 md:p-8 rounded-3xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
             >
               <h2
-                class="font-headline text-2xl font-bold text-on-background mb-6 flex items-center gap-2"
+                class="font-headline text-2xl font-bold text-on-background mb-4 flex items-center gap-2"
               >
                 <span class="material-symbols-outlined text-primary"
                   >person</span
                 >
                 プロフィール
               </h2>
-              <dl class="grid grid-cols-1 md:grid-cols-2 gap-6 text-on-surface">
+              <dl class="grid grid-cols-1 md:grid-cols-2 gap-4 text-on-surface">
                 <div class="space-y-1">
                   <dt class="text-sm text-on-surface-variant font-medium">
                     氏名
                   </dt>
-                  <dd class="text-lg font-bold">山田 太郎</dd>
+                  <dd class="text-lg font-bold">荒川 凜</dd>
                 </div>
                 <div class="space-y-1">
                   <dt class="text-sm text-on-surface-variant font-medium">
                     経歴
                   </dt>
                   <dd class="text-lg font-bold">
-                    2026年3月に○○大学○○学部を卒業
+                    2026年3月に法政大学キャリアデザイン学部を卒業
                   </dd>
-                </div>
-                <div class="space-y-1">
-                  <dt class="text-sm text-on-surface-variant font-medium">
-                    志望職種
-                  </dt>
-                  <dd class="text-lg font-bold">エンジニア</dd>
                 </div>
                 <div class="space-y-1">
                   <dt class="text-sm text-on-surface-variant font-medium">
@@ -168,21 +144,80 @@
       <section class="py-16 px-6 bg-surface-container-low">
         <div class="max-w-5xl mx-auto space-y-8">
           <section
-            class="bg-surface p-8 md:p-10 rounded-3xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
+            class="bg-surface p-6 sm:p-8 md:p-10 rounded-3xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
           >
-            <h2
-              class="font-headline text-2xl font-bold text-on-background mb-6 flex items-center gap-2"
-            >
-              <span class="material-symbols-outlined text-primary">school</span>
-              学習背景・興味分野
-            </h2>
-            <p
-              class="font-body text-on-surface-variant leading-relaxed text-sm p-4 bg-surface-variant/30 rounded-xl border border-outline-variant/50"
-            >
-              <!-- 後で学習背景や興味分野に差し替えてください -->
-              大学や独学、授業、個人開発などを通して学んできた内容をまとめる想定です。
-              たとえば、Web制作、アプリ開発、UI/UX、バックエンドへの関心などを整理して書けます。
-            </p>
+            <div class="learning-flow">
+              <div class="learning-flow__header">
+                <h2 class="learning-flow__title">
+                  <span class="material-symbols-outlined text-primary"
+                    >school</span
+                  >
+                  学習背景・興味分野
+                </h2>
+                <p class="learning-flow__lead">
+                  IT業界への関心から独学での学習、個人開発、現在の興味分野までを、学習の流れに沿って整理しています。
+                </p>
+              </div>
+              <ol class="learning-flow__list">
+                <li class="learning-flow__item">
+                  <div class="learning-flow__number">01</div>
+                  <article class="learning-flow__card">
+                    <div class="learning-flow__card-header">
+                      <h3 class="learning-flow__heading">IT業界への関心</h3>
+                    </div>
+                    <p class="learning-flow__text">
+                      技術の力で、業界や業種を問わず課題解決に貢献できる点に魅力を感じ、IT業界に興味を持ちました。
+                    </p>
+                  </article>
+                </li>
+                <li class="learning-flow__item">
+                  <div class="learning-flow__number">02</div>
+                  <article class="learning-flow__card">
+                    <div class="learning-flow__card-header">
+                      <h3 class="learning-flow__heading">
+                        プログラミングへの興味
+                      </h3>
+                    </div>
+                    <p class="learning-flow__text">
+                      サービスやシステムを支える仕組みに関心を持ち、好奇心から独学でプログラミング学習を始めました。
+                    </p>
+                  </article>
+                </li>
+                <li class="learning-flow__item">
+                  <div class="learning-flow__number">03</div>
+                  <article class="learning-flow__card">
+                    <div class="learning-flow__card-header">
+                      <h3 class="learning-flow__heading">ものづくりの面白さ</h3>
+                    </div>
+                    <p class="learning-flow__text">
+                      コードが画面に反映され、課題を解決できる経験を通して、ものづくりの達成感を感じました。
+                    </p>
+                  </article>
+                </li>
+                <li class="learning-flow__item">
+                  <div class="learning-flow__number">04</div>
+                  <article class="learning-flow__card">
+                    <div class="learning-flow__card-header">
+                      <h3 class="learning-flow__heading">アプリ開発への挑戦</h3>
+                    </div>
+                    <p class="learning-flow__text">
+                      学んだ知識を実際の形にしたいと考え、個人開発を通して設計から実装まで取り組みました。
+                    </p>
+                  </article>
+                </li>
+                <li class="learning-flow__item learning-flow__item--current">
+                  <div class="learning-flow__number">05</div>
+                  <article class="learning-flow__card">
+                    <div class="learning-flow__card-header">
+                      <h3 class="learning-flow__heading">現在の興味分野</h3>
+                    </div>
+                    <p class="learning-flow__text">
+                      ユーザー課題を起点に、使いやすく保守しやすいアプリケーションを設計・実装することに関心があります。
+                    </p>
+                  </article>
+                </li>
+              </ol>
+            </div>
           </section>
           <section
             class="bg-surface p-8 md:p-10 rounded-3xl shadow-[0_4px_20px_rgba(46,50,48,0.06)] border border-outline-variant/30"
@@ -339,14 +374,12 @@
           <div
             class="flex items-center gap-3 rounded-2xl border border-stone-300 bg-white px-4 py-3 shadow-sm"
           >
-            <span class="material-symbols-outlined text-[#4a7c59]"
-              >mail</span
-            >
+            <span class="material-symbols-outlined text-[#4a7c59]">mail</span>
             <a
               class="font-['Nunito_Sans'] text-stone-700 hover:text-[#4a7c59] transition-colors duration-300 ease-in-out break-all"
-              href="mailto:your-email@example.com"
+              href="mailto:arakawa.rin.0101@gmail.com"
             >
-              your-email@example.com
+             arakawa.rin.0101@gmail.com
             </a>
           </div>
         </div>

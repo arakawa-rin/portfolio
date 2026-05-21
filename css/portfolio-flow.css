@@ -72,3 +72,140 @@
     max-width: 42rem;
   }
 }
+
+.learning-flow {
+  color: #2e3230;
+}
+
+.learning-flow__header {
+  margin-bottom: 1.75rem;
+  max-width: 44rem;
+}
+
+.learning-flow__title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  font-family: "Literata", serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.learning-flow__lead {
+  font-family: "Nunito Sans", sans-serif;
+  color: #4a4e4a;
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+.learning-flow__list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.learning-flow__item {
+  display: grid;
+  grid-template-columns: 3.25rem minmax(0, 1fr);
+  gap: 0.9rem;
+  align-items: stretch;
+}
+
+.learning-flow__number {
+  display: grid;
+  width: 3.25rem;
+  height: 100%;
+  min-height: 4.25rem;
+  place-items: center;
+  border-right: 2px solid rgba(74, 124, 89, 0.28);
+  background: transparent;
+  color: #4a7c59;
+  font-family: "Literata", serif;
+  font-weight: 800;
+}
+
+.learning-flow__card {
+  min-width: 0;
+  padding: 1rem 0 1rem 0.15rem;
+  border-bottom: 1px solid rgba(196, 200, 188, 0.45);
+  background: transparent;
+}
+
+.learning-flow__card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.35rem;
+}
+
+.learning-flow__heading {
+  font-family: "Literata", serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.learning-flow__text {
+  font-family: "Nunito Sans", sans-serif;
+  color: #4a4e4a;
+  font-size: 0.93rem;
+  line-height: 1.72;
+}
+
+.learning-flow__item--current .learning-flow__number {
+  border-right-color: #4a7c59;
+  color: #2a6038;
+}
+
+.learning-flow__item--current .learning-flow__card {
+  border-bottom-color: rgba(74, 124, 89, 0.34);
+}
+
+@media (min-width: 768px) {
+  .learning-flow__header {
+    margin-bottom: 2rem;
+  }
+
+  .learning-flow__list {
+    gap: 0.85rem;
+  }
+
+  .learning-flow__item {
+    grid-template-columns: 3.75rem minmax(0, 1fr);
+    gap: 1.1rem;
+  }
+
+  .learning-flow__number {
+    width: 3.75rem;
+    min-height: 4.5rem;
+  }
+
+  .learning-flow__card {
+    padding: 1.05rem 0 1.05rem 0.25rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .learning-flow__title {
+    align-items: flex-start;
+    font-size: 1.35rem;
+  }
+
+  .learning-flow__item {
+    grid-template-columns: 2.6rem minmax(0, 1fr);
+    gap: 0.75rem;
+  }
+
+  .learning-flow__number {
+    width: 2.6rem;
+    min-height: 4.5rem;
+  }
+
+  .learning-flow__card {
+    padding: 0.95rem 0 0.95rem 0;
+  }
+
+  .learning-flow__card-header {
+    align-items: flex-start;
+  }
+}
